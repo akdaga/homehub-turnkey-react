@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Anti-flicker for images */
+.no-flicker-img{transform:translateZ(0);backface-visibility:hidden;will-change:transform;}
+body{color:rgb(226,232,240);} /* slate-200 */
+a{color:#D4AF37;}
+
+
+/* Final anti-flicker fixes for Netlify prod */
+.no-flicker-img{
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+  image-rendering:auto;
+  will-change:auto;
+  transform:none !important;
+  transition:none !important;
+  pointer-events:auto;
+}
+img.no-flicker-img[width][height]{
+  max-width:100%;
+  height:auto;
+}

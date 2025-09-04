@@ -1,0 +1,3 @@
+/protected/*   /protected/:splat   200!   Role=admin,partner
+/protected/*   /401.html   401
+/*   /index.html   200
