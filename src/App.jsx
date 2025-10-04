@@ -9,6 +9,7 @@ import Resources from './pages/Resources.jsx'
 import FAQ from './pages/FAQ.jsx'
 import Portal from './pages/Portal.jsx'
 import Commissions from './pages/Commissions.jsx'
+import DagaRealty from './pages/DagaRealty.jsx'
 
 export default function App(){
   return (
@@ -24,6 +25,7 @@ export default function App(){
           <Route path="/faq" element={<FAQ />} />
           <Route path="/portal" element={<Portal />} />
           <Route path="/portal/commissions" element={<Commissions />} />
+          <Route path="/dagarealty" element={<DagaRealty />} />
         </Routes>
       </main>
       <Footer />
