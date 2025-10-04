@@ -15,6 +15,7 @@ export default function Navbar(){
           </div>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm">
+          <NavLink to="/dagarealty" className={({isActive}) => (isActive?'text-brand-gold font-semibold':'text-blue-200 hover:text-brand-gold')}>Daga Realty</NavLink>
           <NavLink to="/packages" className={({isActive}) => (isActive?'text-brand-gold font-semibold':'text-blue-200 hover:text-brand-gold')}>Packages</NavLink>
           <NavLink to="/process" className={({isActive}) => (isActive?'text-brand-gold font-semibold':'text-blue-200 hover:text-brand-gold')}>Process</NavLink>
           <NavLink to="/partners" className={({isActive}) => (isActive?'text-brand-gold font-semibold':'text-blue-200 hover:text-brand-gold')}>Partners</NavLink>
